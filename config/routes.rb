@@ -1,5 +1,20 @@
 Rails.application.routes.draw do
-  get 'heros' => 'pictures#index'
+  root 'heros#index'
+
+  resources :heros
+  # get 'heros' => 'pictures#index'
+  #
+  # post 'heros' => 'pictures#create'
+  # get 'heros/new' => 'pictures#new'
+  #
+  # get 'heros/:id/edit' => 'pictures#edit', as: "edit_hero"
+  #
+  #
+  # get 'heros/:id' => 'pictures#show', as: 'hero'
+  # patch 'heros/:id' => "pictures#update"
+  # delete 'heros/:id' => "pictures#destroy", as: 'delete_hero'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

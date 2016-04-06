@@ -1,6 +1,4 @@
 <h1>Heros' Hall</h1>
-<%= link_to "Add a new Hero", heros_url"/new" %>
-
 <% @heros.each do |hero| %>
  <p>
   <a href="<%= hero_path(hero) %>"><strong><%= hero.name %></strong></a><br><%= hero.role %>, <%= hero.attact_type %><br>

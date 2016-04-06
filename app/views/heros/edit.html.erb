@@ -1,0 +1,24 @@
+<h1>Edit Hero Profile</h1>
+<%= link_to "Back to Heros' Hall", heros_url %>
+
+<%= form_for @hero do |f|%>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :attact_type %><br>
+    <%= f.text_field :attact_type %>
+  </p>
+  <p>
+    <%= f.label :role %><br>
+    <%= f.text_field :role %>
+  </p>
+  <p>
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </p>
+  <p>
+    <%= f.submit "Save" %>
+  </p>
+<% end %>

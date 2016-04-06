@@ -1,0 +1,8 @@
+<%= link_to "Back to Heros' Hall", heros_url %> |
+<%= link_to "Edit", edit_hero_path(@hero) %> |
+<%= link_to "Delete", @hero, method: :delete, data: {confirm: "Are you sure you want to delete this Hero?"} %>
+
+<p>
+  <strong><%= @hero.name %></strong><br><%= @hero.role %>, <%= @hero.attact_type %><br>
+</p>
+<img src="<%= @hero.url %>"/>
